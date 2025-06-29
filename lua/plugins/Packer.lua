@@ -5,6 +5,11 @@
 --
 
 
+-- Enable the fancy styling (only intended for my riced desktop)
+-- should be set to false, if not using a transparent terminal emulator with a pywal generated color scheme
+fancyMode = false
+
+
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(
@@ -14,16 +19,17 @@ return require('packer').startup(
 	use 'wbthomason/packer.nvim'
 
 	-- Treesitter
-        use { 'nvim-treesitter/nvim-treesitter', branch = 'master', lazy=false, build = ':TSUpdate' }
+        use { 'nvim-treesitter/nvim-treesitter', branch = 'master', lazy = false, build = ':TSUpdate' }
 
 	-- Telescope (fuzzy finder)
 	use { 'nvim-telescope/telescope.nvim', requires = 'nvim-lua/plenary.nvim'}
 
-	-- pyWal generated color scheme
-	use { 'RedsXDD/neopywal.nvim', as='neopywal' }
 	
 	if fancyMode == true
 	then
+		-- pyWal generated color scheme
+		use { 'RedsXDD/neopywal.nvim', as = 'neopywal' }
+
 		-- neoPyWal setup
 		local neopywal = require("neopywal")
 		neopywal.setup()

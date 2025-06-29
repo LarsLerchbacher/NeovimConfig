@@ -4,10 +4,6 @@
 --
 
 
--- Enable the fancy styling (only intended for my riced desktop)
--- should be set to false, if not using a transparent terminal emulator with a pywal generated color scheme
-fancyMode = true
-
 -- Enable changed keymaps
 require('keymaps')
 
