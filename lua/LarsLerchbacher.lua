@@ -4,11 +4,11 @@
 --
 
 
--- Enable changed keymaps
-require('keymaps')
-
 -- Enable the plugin manger 
 require('plugins/Packer')
+
+-- Enable changed keymaps
+require('keymaps')
 
 -- Enable treesitter (syntax highlighter)
 require('plugins/treesitter')
