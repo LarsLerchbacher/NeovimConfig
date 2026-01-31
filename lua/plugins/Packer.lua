@@ -4,13 +4,10 @@
 -- Licensed under the MIT License. See LICENSE file in the root directory.
 --
 
-
--- Enable the fancy styling (only intended for my riced desktop)
--- should be set to false, if not using a transparent terminal emulator with a pywal generated color scheme
-fancyMode = false
-
-
 vim.cmd [[packadd packer.nvim]]
+
+-- Enables/Disables background transparency
+local fancyMode = false
 
 return require('packer').startup(
     function(use)
@@ -24,20 +21,25 @@ return require('packer').startup(
 	-- Telescope (fuzzy finder)
 	use { 'nvim-telescope/telescope.nvim', requires = 'nvim-lua/plenary.nvim'}
 
-	
-	if fancyMode == true
-	then
-		-- pyWal generated color scheme
-		use { 'RedsXDD/neopywal.nvim', as = 'neopywal' }
+	use { 'ThePrimeagen/harpoon', requires = 'nvim-lua/plenary.nvim' }
 
-		-- neoPyWal setup
-		local neopywal = require("neopywal")
-		neopywal.setup()
-		vim.cmd.colorscheme("neopywal")
+	-- LSP configs
+	use { 'neovim/nvim-lspconfig' }
 
+	-- python language server
+	use { 'microsoft/pyright' }
+
+	-- color theme
+	use { 'sainnhe/everforest' }
+
+	-- set the colorscheme
+	vim.cmd.colorscheme('everforest')
+
+	if fancyMode then
 		-- remove background 
 		vim.cmd("highlight Normal guibg=None")
-	end
+	end 
+
 
     end
 )

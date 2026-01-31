@@ -74,6 +74,21 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  everforest = {
+    loaded = true,
+    path = "C:\\Users\\Lars\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\everforest",
+    url = "https://github.com/sainnhe/everforest"
+  },
+  harpoon = {
+    loaded = true,
+    path = "C:\\Users\\Lars\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "C:\\Users\\Lars\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "C:\\Users\\Lars\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
@@ -88,6 +103,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Lars\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  pyright = {
+    loaded = true,
+    path = "C:\\Users\\Lars\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\pyright",
+    url = "https://github.com/microsoft/pyright"
   },
   ["telescope.nvim"] = {
     loaded = true,
