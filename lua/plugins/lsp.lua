@@ -21,9 +21,29 @@ function enableAutoCompletion(client, bufnr)
       vim.keymap.set("i", "<C-space>", vim.lsp.completion.get, { desc = "trigger autocompletion" })
 end
 
+-- Enable pyright
+vim.lsp.enable('pyright')
+
+-- Enable lua language server
+vim.lsp.enable('lua_ls')
+
+vim.lsp.enable('superhtml')
+
+-- CSS language server
+vim.lsp.enable('cssls')
+
+-- Java language server
+vim.lsp.enable('jdtls')
+
+-- C language server
+vim.lsp.enable('ccls')
+
+
+
 vim.lsp.config("pyright", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
 vim.lsp.config("lua_ls", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
 vim.lsp.config("cssls", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
 vim.lsp.config("superhtml", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
 vim.lsp.config("jdtls", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
+vim.lsp.config("ccls", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
 

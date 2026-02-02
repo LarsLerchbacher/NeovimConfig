@@ -14,19 +14,7 @@ require('keymaps')
 require('plugins/treesitter')
 
 -- Enable autocompletion
-require('plugins/autocompletion')
-
--- Enable pyright
-vim.lsp.enable('pyright')
-
--- Enable lua language server
-vim.lsp.enable('lua_ls')
-
-vim.lsp.enable('superhtml')
-
-vim.lsp.enable('cssls')
-
-vim.lsp.enable('jdtls')
+require('plugins/lsp')
 
 -- Enable the colorizer
 vim.cmd("let g:colorizer_auto_color = 1")
