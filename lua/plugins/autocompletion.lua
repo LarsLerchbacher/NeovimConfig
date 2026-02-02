@@ -5,7 +5,7 @@
 
 function enableAutoCompletion(client, bufnr)
 	local chars = {}
-	local triggerChars = ".abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	local triggerChars = ".abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ<"
 
 	triggerChars:gsub(".", function(c) table.insert(chars,c) end)
 
@@ -23,4 +23,6 @@ end
 
 vim.lsp.config("pyright", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
 vim.lsp.config("lua_ls", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
+vim.lsp.config("cssls", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
+vim.lsp.config("superhtml", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
 

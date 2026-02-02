@@ -22,6 +22,10 @@ vim.lsp.enable('pyright')
 -- Enable lua language server
 vim.lsp.enable('lua_ls')
 
+vim.lsp.enable('superhtml')
+
+vim.lsp.enable('cssls')
+
 -- Enable the colorizer
 vim.cmd("let g:colorizer_auto_color = 1")
 
@@ -30,7 +34,7 @@ vim.cmd("set number")
 vim.cmd("set number relativenumber")
 
 -- activate autocompletion
-vim.opt.completeopt = { "menuone", "noselect", "popup" }
+vim.opt.completeopt = { "menuone", "noinsert", "popup" }
 
 -- Disable search highlighting after end of search
 vim.cmd('set nohlsearch')

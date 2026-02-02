@@ -29,6 +29,9 @@ return require('packer').startup(
 	-- python language server
 	use { 'microsoft/pyright' }
 
+	-- html language server
+	use { 'kristoff-it/superhtml' }
+
 	-- color theme
 	use { 'sainnhe/everforest' }
 

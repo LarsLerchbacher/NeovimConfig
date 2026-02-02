@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Lars\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\pyright",
     url = "https://github.com/microsoft/pyright"
   },
+  superhtml = {
+    loaded = true,
+    path = "C:\\Users\\Lars\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\superhtml",
+    url = "https://github.com/kristoff-it/superhtml"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Lars\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
