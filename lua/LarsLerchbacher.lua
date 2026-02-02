@@ -26,6 +26,8 @@ vim.lsp.enable('superhtml')
 
 vim.lsp.enable('cssls')
 
+vim.lsp.enable('jdtls')
+
 -- Enable the colorizer
 vim.cmd("let g:colorizer_auto_color = 1")
 

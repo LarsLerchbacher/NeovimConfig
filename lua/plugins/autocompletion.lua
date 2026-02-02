@@ -25,4 +25,5 @@ vim.lsp.config("pyright", {on_attach = function(client, bufnr) enableAutoComplet
 vim.lsp.config("lua_ls", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
 vim.lsp.config("cssls", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
 vim.lsp.config("superhtml", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
+vim.lsp.config("jdtls", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
 
