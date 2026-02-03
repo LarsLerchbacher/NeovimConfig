@@ -34,6 +34,16 @@ vim.keymap.set('n', 'p', 'P')
 vim.keymap.set('v', 'p', 'P')
 
 --
+-- Terminal
+--
+function open_terminal()
+	vim.fn.termopen('/bin/bash')
+end
+
+-- Enters terminal mode
+vim.keymap.set('n', '<leader>t', open_terminal)
+
+--
 -- Harpoon
 --
 
@@ -49,3 +59,4 @@ vim.keymap.set('n', '<leader>h5', function() require('harpoon.ui').nav_file(5) e
 -- Packer
 --
 vim.keymap.set('n', '<leader>ps', require('packer').sync)
+
