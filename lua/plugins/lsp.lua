@@ -40,6 +40,7 @@ vim.lsp.enable('ccls')
 
 
 
+-- Enable autocompletion
 vim.lsp.config("pyright", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
 vim.lsp.config("lua_ls", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
 vim.lsp.config("cssls", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
@@ -47,3 +48,18 @@ vim.lsp.config("superhtml", {on_attach = function(client, bufnr) enableAutoCompl
 vim.lsp.config("jdtls", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
 vim.lsp.config("ccls", {on_attach = function(client, bufnr) enableAutoCompletion(client, bufnr) end})
 
+
+--
+-- Show error messages
+--
+vim.diagnostic.config(
+	{
+		underline = false,
+		virtual_text = {
+			spacing = 2,
+			prefix = "●"
+		},
+		update_in_insert = false,
+		severity_sort = true,
+	}
+)
