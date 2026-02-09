@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["ccls.nvim"] = {
+    loaded = true,
+    path = "/home/lars/.local/share/nvim/site/pack/packer/start/ccls.nvim",
+    url = "https://github.com/ranjithshegde/ccls.nvim"
+  },
   everforest = {
     loaded = true,
     path = "/home/lars/.local/share/nvim/site/pack/packer/start/everforest",
@@ -104,15 +109,20 @@ _G.packer_plugins = {
     path = "/home/lars/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["projectlaunch.nvim"] = {
+    loaded = true,
+    path = "/home/lars/.local/share/nvim/site/pack/packer/start/projectlaunch.nvim",
+    url = "https://github.com/sheodox/projectlaunch.nvim"
+  },
   pyright = {
     loaded = true,
     path = "/home/lars/.local/share/nvim/site/pack/packer/start/pyright",
     url = "https://github.com/microsoft/pyright"
   },
-  superhtml = {
+  ["rust-analyzer"] = {
     loaded = true,
-    path = "/home/lars/.local/share/nvim/site/pack/packer/start/superhtml",
-    url = "https://github.com/kristoff-it/superhtml"
+    path = "/home/lars/.local/share/nvim/site/pack/packer/start/rust-analyzer",
+    url = "https://github.com/rust-lang/rust-analyzer"
   },
   ["telescope.nvim"] = {
     loaded = true,

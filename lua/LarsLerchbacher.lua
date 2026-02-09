@@ -16,6 +16,8 @@ require('plugins/treesitter')
 -- Enable autocompletion
 require('plugins/lsp')
 
+require("plugins/projectlaunch")
+
 -- Enable the colorizer
 vim.cmd("let g:colorizer_auto_color = 1")
 

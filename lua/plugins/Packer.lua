@@ -29,8 +29,12 @@ return require('packer').startup(
 	-- python language server
 	use { 'microsoft/pyright' }
 
-	-- html language server
-	use { 'kristoff-it/superhtml' }
+	-- c language server support
+	use { 'ranjithshegde/ccls.nvim' }
+
+	use { 'rust-lang/rust-analyzer' }
+
+	use { 'sheodox/projectlaunch.nvim' }
 
 	-- color theme
 	use { 'sainnhe/everforest' }
@@ -42,7 +46,6 @@ return require('packer').startup(
 		-- remove background 
 		vim.cmd("highlight Normal guibg=None")
 	end 
-
 
     end
 )
