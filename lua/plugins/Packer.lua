@@ -7,7 +7,7 @@
 vim.cmd [[packadd packer.nvim]]
 
 -- Enables/Disables background transparency
-local fancyMode = false
+local fancyMode = true
 
 return require('packer').startup(
     function(use)
@@ -37,10 +37,10 @@ return require('packer').startup(
 	use { 'sheodox/projectlaunch.nvim' }
 
 	-- color theme
-	use { 'sainnhe/everforest' }
+	use { 'catppuccin/nvim', as = "catppuccin" }
 
 	-- set the colorscheme
-	vim.cmd.colorscheme('everforest')
+	vim.cmd.colorscheme('catppuccin')
 
 	if fancyMode then
 		-- remove background 

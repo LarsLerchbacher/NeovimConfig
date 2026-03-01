@@ -74,15 +74,15 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  catppuccin = {
+    loaded = true,
+    path = "/home/lars/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["ccls.nvim"] = {
     loaded = true,
     path = "/home/lars/.local/share/nvim/site/pack/packer/start/ccls.nvim",
     url = "https://github.com/ranjithshegde/ccls.nvim"
-  },
-  everforest = {
-    loaded = true,
-    path = "/home/lars/.local/share/nvim/site/pack/packer/start/everforest",
-    url = "https://github.com/sainnhe/everforest"
   },
   harpoon = {
     loaded = true,
